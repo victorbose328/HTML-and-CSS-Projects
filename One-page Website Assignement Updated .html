@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T-rex Website</title>
+    <link rel="stylesheet" href="./css/one_page_website2.css">
+    <script src="JS/one_page_website.js"></script>
+
+</head>
+<body>
+    <!--NAV-->
+    <ul>
+        <a href="#home" id="link"><li>HOME</li></a>
+        <a href="#gallery" id="link"><li>GALLERY</li></a>
+        <a href="#contact" id="link"><li>CONTACT</li></a>
+        <a href="#video" id="link"><li>VIDEO</li></a>
+        <a href="#footer" id="link"><li>FOOTER</li></a>
+    </ul>
+    <!--END NAV-->
+
+    <!--HOME-->
+    <div id="home">
+        <div class="text-center">
+            <h1>Welcome to the World of T-rex</h1>
+            <h4>Learn about the mighty Tyrannosaurus Rex, the King of the Dinosaurs</h4>
+        </div> 
+    </div>
+    <!--END HOME-->
+
+    <!--GALLERY-->
+    <section id="gallery">
+        <div class="container">
+            <h1>GALLERY</h1>
+
+
+            <!--PHOTO CONTAINER 1-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Trex Photos/trex1.jpg" alt="">
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 1-->
+
+            <!--PHOTO CONTAINER 2-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Trex Photos/trex2.jpg" alt="">
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 2-->
+
+            <!--PHOTO CONTAINER 3-->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./Trex Photos/trex3.jpg" alt="">
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 3-->
+
+        </div>
+    </section>
+    <!--END GALLERY-->
+    
+    <!--CONTACT-->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <!--END CONTACT-->
+
+    <!--VIDEO-->
+    <section id="video">
+        <h2>Watch T-REX -  THE KING OF THE LIZARD TYRANT</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gny5iZI8IBY" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <!--END VIDEO-->
+
+    <!--FOOTER-->
+    <footer id="footer">
+        <p>&copy; 2024 T-rex Website. All rights reserved.</p>
+    </footer>
+    <!--END FOOTER-->
+</body>
+</html>

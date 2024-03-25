@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif; /* Font-family */
+    font-size: 16px; /* Font-size */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Width of the inputs */
+    margin-bottom: 10px; /* Margin between the inputs */
+    border: 1px solid #ccc; /* Border of the inputs */
+    border-radius: 5px; /* Border radius of the inputs */
+    padding: 5px; /* Padding of the inputs */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px; /* Margin between list items */
+}

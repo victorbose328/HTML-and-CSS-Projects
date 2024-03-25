@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif; /* Font-family */
+    font-size: 16px; /* Font-size */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Width of the inputs */
+    margin-bottom: 10px; /* Margin between the inputs */
+    border: 1px solid #ccc; /* Border of the inputs */
+    border-radius: 5px; /* Border radius of the inputs */
+    padding: 5px; /* Padding of the inputs */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px; /* Margin between list items */
+}
+
+.row {
+    display: flex;
+} 
+
+.column {
+    flex: 33.33%; /* Equal width for each column */
+    padding: 0 8px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Create four equal columns that floats next to eachother */
+.column {
+    float: left;
+    width: 25%;
+ }
+  
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+  
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+  
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+  
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demo {
+    width: 100%; /* Ensure the thumbnail images fill their container */
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.6s ease; /* Added transition effect */
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Updated styles for the photo containers and images */
+.photo-container {
+    width: 33.33%; /* Adjusted width for three equal columns */
+    padding: 8px; /* Added padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.photo {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Set the height of the container to maintain aspect ratio */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the image fills the container */
+    height: auto;
+}
+
+/* Updated styles for the modal */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%; /* Adjusted width */
+    max-width: 1200px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.mySlides img {
+    width: 100%; /* Ensure the image fills the modal */
+    height: auto;
+}
